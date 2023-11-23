@@ -1,6 +1,6 @@
 import rclpy                     #ROS 2のクライアントのためのライブラリ
 from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
-from std_msgs.msg import Int16   #通信の型（16ビットの符号付き整数）
+from person_msgs.msg import Person   #通信の型（16ビットの符号付き整数）
 
 rclpy.init()
 node = Node("talker")            #ノード作成（nodeという「オブジェクト」を作成）
@@ -9,8 +9,9 @@ n = 0 #カウント用変数
 
 def cb():          #17行目で定期実行されるコールバック関数
     global n       #関数を抜けてもnがリセットされないようにしている
-    msg = Int16()  #メッセージの「オブジェクト」
-    msg.data = n   #msgオブジェクトの持つdataにnを結び付け
+    msg = Person()#メッセージの「オブジェクト」
+    msg.name = "松下遥輝"  #msgファイルに書いた「name」
+    msg.age = n            #msgファイルに書いた「age」
     pub.publish(msg)        #pubの持つpublishでメッセージ送信
     n += 1
 
