@@ -9,7 +9,7 @@ n = 0
 def cb():
     global n
     msg = Person()
-    msg.name = "松下遥輝"
+    msg.name = "松下輝"
     msg.age = n 
     pub.publish(msg)
     n += 1
