@@ -8,13 +8,17 @@ class Talker():
         self.n = 0
         node.create_timer(0.5, self.cd)
 
-def cb():
-    msg = Int16()
-    msg.data = self.n 
-    self.pub.publish(msg)
-    self.n += 1
+    def cd():
+        msg = Int16()
+        msg.data = self.n 
+        self.pub.publish(msg)
+        self.n += 1
 
-rclpy.init()
-node = Node("talker")
-talker = Talker(node)
-rclpy.spin(node)
+def main():
+    rclpy.init()
+    node = Node("talker")
+    talker = Talker(node)
+    rclpy.spin(node)
+
+if __name__ == '__main__':
+    main()
