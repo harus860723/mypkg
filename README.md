@@ -1,6 +1,6 @@
 # mypkg
-* 2023年ロボットシステム学の授業で使用したリポジトリ。
-* plusコマンドはロボットシステム学の課題1で機能を追加したコマンド。
+* 2023年千葉工業大学未来ロボティクス学科ロボットシステム学の授業で使用したリポジトリ。
+* ロボットシステム学の課題2で機能を追加したコマンド。
 
 # plusコマンド
 [![test](https://github.com/harus860723/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/harus860723/mypkg/actions/workflows/test.yml)
