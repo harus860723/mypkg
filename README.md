@@ -2,6 +2,9 @@
 * 2023年ロボットシステム学の授業で使用したリポジトリ。
 * plusコマンドはロボットシステム学の課題1で機能を追加したコマンド。
 
+# plusコマンド
+[![test](https://github.com/harus860723/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/harus860723/mypkg/actions/workflows/test.yml)
+
 ## 使い方
 
 ### インストール
