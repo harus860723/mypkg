@@ -11,7 +11,7 @@
 ## ノードの説明
 
 
-### talker.py
+### 1.talker.py
 
 
 ### 機能
@@ -26,7 +26,7 @@ $ ros2 run mypkg talker
 ### 実行結果
 * 実行結果を下に示す。 
 
-### listener
+### 2.listener
 
 ### 機能
 * 実行するとメッセージを受け取り出力する。
