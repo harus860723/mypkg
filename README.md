@@ -1,41 +1,35 @@
-# mypkg
-* 2023年千葉工業大学未来ロボティクス学科ロボットシステム学の授業で使用したリポジトリ。
-* ロボットシステム学の課題2で機能を追加したコマンド。
-
-# plusコマンド
+# robosys2023_ROS2
 [![test](https://github.com/harus860723/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/harus860723/mypkg/actions/workflows/test.yml)
+# 概要説明
+* 2023年千葉工業大学未来ロボティクス学科ロボットシステム学の授業で使用したリポジトリ。
+* ロボットシステム学の課題2で提出したコマンド。
 
-## 使い方
+# 機能説明
 
-### インストール
+##ノードの説明
 
-* robosys2023をcloneする。
-```
-$ git clone https://github.com/harus860723/robosys2023.git
-```
+##talker.py
 
-### 実行例
-* コードの実行例を下に示す。
+###機能
 
-```
-$ seq 5 | ./plus
-```
+###実行例
 
-### 実行結果
-* 実行例の結果を下に示す。
+###実行結果
 
-```
-合計値:15
-odd number
-値に2をかけた数: 30
-```
+##listener
 
-## 必要なソフトウェア
-* Python
-  * テスト済み: 3.7〜3.10
+###機能
+
+###実行例
+
+###実行結果
+
+##トピック
+
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
+* ROS2 Humble
 
 ## ライセンス
 * このソフトウェアパッケージは、3条項BSDライセンスの下、再領布および使用が許可される。
