@@ -15,7 +15,7 @@ class Talker():
         msg = Int16()
         msg.data = self.n 
         self.pub.publish(msg)
-        self.n += 1
+        self.n += 2
 
 def main():
     rclpy.init()
