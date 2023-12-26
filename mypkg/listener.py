@@ -7,7 +7,7 @@ from std_msgs.msg import Int16
 
 def cb(msg):
     global node
-    node.get_logger().info("Listen: %d" % msg.data)
+    node.get_logger().info("Answer: %d" % (msg.data * msg.data * 12 + 34))
 
 rclpy.init()
 node = Node("listener")
