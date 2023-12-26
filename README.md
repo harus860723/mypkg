@@ -41,6 +41,47 @@ $ ros2 run mypkg listener
 
 ## 使用方法
 
+###　準備
+* ros2が使用できる環境で行う。
+* cloneコマンドを使用しリポジトリをインストールする。
+
+```
+$ git clone https://github.com/harus860723/mypkg/tree/kadai3?tab=readme-ov-file
+```
+
+* インストールしたリポジトリをビルドする。
+###　実行方法
+* 端末1でtalkerを実行する。
+
+```
+$ ros2 run mypkg talker
+```
+
+* 端末2でlistenerを実行する。
+
+```
+$ ros2 run mypkg listener
+```
+
+###　実行結果
+
+* 端末1は何も表示されない。
+* 端末２
+
+```
+[INFO] [1703587822.661840100] [listener]: Answer: 34
+[INFO] [1703587823.624772700] [listener]: Answer: 46
+[INFO] [1703587824.624063900] [listener]: Answer: 82
+[INFO] [1703587825.625573200] [listener]: Answer: 142
+[INFO] [1703587826.624655700] [listener]: Answer: 226
+[INFO] [1703587827.623980500] [listener]: Answer: 334
+[INFO] [1703587828.624138500] [listener]: Answer: 466
+[INFO] [1703587829.624617300] [listener]: Answer: 622
+[INFO] [1703587830.624348000] [listener]: Answer: 802
+[INFO] [1703587831.624600600] [listener]: Answer: 1006
+```
+
+* １秒ごとに計算結果が表示される。
 ## テスト環境
 * Ubuntu 22.04.2 LTS
 * ROS2 Humble
