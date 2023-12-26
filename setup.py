@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
-import os                  #追加
-from glob import glob      #追加
+import os
+from glob import glob
 package_name = 'mypkg'
 
 setup(
