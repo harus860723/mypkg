@@ -11,4 +11,4 @@ source $dir/.bashrc
 timeout 10 ros2 launch mypkg talk_listen.launch.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log |
-grep 'Answer: 1006'
+grep 'Answer: 1234'
