@@ -37,11 +37,11 @@ $ ros2 run mypkg listener
 * 実行しても何も表示されない。
 
 ## トピック
-* 今回は
+* トピックはtalkerから出された数字である。
 
 ## 使用方法
 
-###　準備
+### 準備
 * ros2が使用できる環境で行う。
 * cloneコマンドを使用しリポジトリをインストールする。
 
@@ -50,7 +50,7 @@ $ git clone https://github.com/harus860723/mypkg/tree/kadai3?tab=readme-ov-file
 ```
 
 * インストールしたリポジトリをビルドする。
-###　実行方法
+### 実行方法
 * 端末1でtalkerを実行する。
 
 ```
@@ -63,7 +63,7 @@ $ ros2 run mypkg talker
 $ ros2 run mypkg listener
 ```
 
-###　実行結果
+### 実行結果
 
 * 端末1は何も表示されない。
 * 端末２
