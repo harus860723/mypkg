@@ -1,5 +1,6 @@
 # mypkg
 [![test](https://github.com/harus860723/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/harus860723/mypkg/actions/workflows/test.yml)
+
 ## 概要説明
 * 2023年千葉工業大学未来ロボティクス学科ロボットシステム学の授業で使用したリポジトリ。
 * ロボットシステム学の課題2で提出したコマンド。
@@ -39,10 +40,14 @@ $ ros2 run mypkg listener
 ## トピック
 * トピックはtalkerから出された数字である。
 
+## 必要なソフトウェア
+* Python
+  * テスト済み: 3.7 ~ 3.10
+* ros2
+
 ## 使用方法
 
 ### 準備
-* ros2が使用できる環境で行う。
 * cloneコマンドを使用しリポジトリをインストールする。
 
 ```
@@ -50,6 +55,7 @@ $ git clone https://github.com/harus860723/mypkg/tree/kadai3?tab=readme-ov-file
 ```
 
 * インストールしたリポジトリをビルドする。
+
 ### 実行方法
 * 端末1でtalkerを実行する。
 
@@ -82,6 +88,7 @@ $ ros2 run mypkg listener
 ```
 
 * １秒ごとに計算結果が表示される。
+
 ## テスト環境
 * Ubuntu 22.04.2 LTS
 * ROS2 Humble
