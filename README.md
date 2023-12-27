@@ -43,7 +43,7 @@ $ ros2 run mypkg listener
 * メッセージはtalkerでカウントされた数字である。
 * メッセージの型は16ビットの符号つき整数。
 
-## 使用方法
+## ノードの使用方法
 
 ### 準備
 * ROS2が使える環境を整える。
@@ -87,6 +87,38 @@ $ ros2 run mypkg listener
 ```
 
 * １秒ごとに計算結果が表示される。
+
+##　launchの使用方法
+
+### 機能
+* 複数のノードを一度に立ち上げることができる。
+* ノードごとに実行しなくてもよい。
+
+### 実行方法
+* 端末でlaunchを実行
+
+```
+$ ros2 launch mypkg talk_listen.launch.py
+```
+
+### 実行結果
+
+```
+[INFO] [launch]: All log files can be found below /home/haru/.ros/log/2023-12-27-14-25-30-463360-MyComputer-1671
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [talker-1]: process started with pid [1672]
+[listener-2] [INFO] [1703654731.884197200] [listener]: Answer: 34
+[listener-2] [INFO] [1703654732.873949000] [listener]: Answer: 46
+[listener-2] [INFO] [1703654733.873977300] [listener]: Answer: 82
+[listener-2] [INFO] [1703654734.873437700] [listener]: Answer: 142
+[listener-2] [INFO] [1703654735.873878100] [listener]: Answer: 226
+[listener-2] [INFO] [1703654736.873827200] [listener]: Answer: 334
+[listener-2] [INFO] [1703654737.873776300] [listener]: Answer: 466
+[listener-2] [INFO] [1703654738.872654700] [listener]: Answer: 622
+[listener-2] [INFO] [1703654739.873408200] [listener]: Answer: 802
+[listener-2] [INFO] [1703654740.873788300] [listener]: Answer: 1006
+```
+
 
 ## テスト環境
 * Ubuntu 22.04.2 LTS
