@@ -51,7 +51,7 @@ $ ros2 run mypkg listener
 * cloneコマンドを使用しリポジトリをインストールする。
 
 ```
-$ git clone https://github.com/harus860723/mypkg/tree/kadai3?tab=readme-ov-file
+$ git clone https://github.com/harus860723/mypkg?tab=readme-ov-file
 ```
 
 * インストールしたリポジトリをビルドする。
